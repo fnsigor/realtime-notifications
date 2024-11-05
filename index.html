@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Realtime Notifications</title>
+    
+</head>
+<body>
+
+  <div id="notificationCard"></div>
+
+  <script>
+    const notificationEvents = new EventSource('http://localhost:3000/events')
+
+    notificationEvents.addEventListener('new-notification', (messageEvent) => {
+      console.log(messageEvent)
+      document.getElementById('notificationCard').textContent = JSON.stringify(messageEvent.data)
+    })
+  </script>
+</body>
+</html>
