@@ -28,7 +28,7 @@ and see in the ```index.html``` the magic happens!
 
 </br>
 
-<p>References:</p>
+<h2>References:</h2>
 
 * <a target="_blank" href="https://medium.com/@igorbitencourtsilveira/um-jeito-simples-de-notificar-o-frontend-atrav%C3%A9s-de-node-js-sse-server-sent-events-271b87be67c6">"Um jeito simples de notificar o Frontend através de Node.js + SSE(Server Sent Events)"
 </a>
